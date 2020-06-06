@@ -13,7 +13,7 @@ jobs:
       run: rm .npmrc && echo 'https://npm.pkg.github.com/:_authToken={{secrets.GITHUB_TOKEN}}' > .npmrc
     - name: create files
       run: mkdir build && touch build/xpto.js && touch build/abc.js && echo 'const abc = () => {};' > build/xpto.js
-    - name: Hello2
+    - name: Hello
       run: npm install
     - name: AWS Lambda Deploy
       uses: appleboy/lambda-action@master
