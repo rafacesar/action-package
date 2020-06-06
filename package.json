@@ -1,0 +1,19 @@
+{
+  "name": "action-package",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": " "
+  },
+  "repository": "git://github.com/rafacesar/action-package.git",
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/rafacesar/action-package/issues"
+  },
+  "homepage": "https://github.com/rafacesar/action-package#readme",
+  "dependencies": {
+    "react": "^16.13.1"
+  }
+}
