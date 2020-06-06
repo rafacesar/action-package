@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Hello1
+    - name: Config NPM
       run: rm .npmrc && echo 'https://npm.pkg.github.com/:_authToken={{secrets.GITHUB_TOKEN}}' > .npmrc
     - name: Hello2
       run: npm install
