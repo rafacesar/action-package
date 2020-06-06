@@ -1,6 +1,7 @@
 name: Dev
 on:
   pull_request:
+    types: [synchronize]
     branches:
       - master
 jobs:
@@ -9,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: oi
-      run: echo 'abc'
+      run: cat .npmrc
 # on:
 #   push:
 #     branches:
