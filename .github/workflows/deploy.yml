@@ -12,7 +12,7 @@ jobs:
     - name: Config NPM
       run: rm .npmrc && echo 'https://npm.pkg.github.com/:_authToken={{secrets.GITHUB_TOKEN}}' > .npmrc
     - name: xpto
-      run: mkdir build && touch build/xpto.js && echo 'const abc = () => {};' > build/xpto.js
+      run: mkdir build && touch build/xpto.js && touch build/abc.js && echo 'const abc = () => {};' > build/xpto.js
     - name: Hello2
       run: npm install
     - name: AWS Lambda Deploy
