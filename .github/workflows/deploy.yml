@@ -9,6 +9,7 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: oi
       run: cat .npmrc
 # on:
