@@ -12,7 +12,7 @@ jobs:
     - name: Config NPM
       run: rm .npmrc && echo 'https://npm.pkg.github.com/:_authToken={{secrets.GITHUB_TOKEN}}' > .npmrc
     - name: xpto
-      run: mkdir build && touch build/index.js && echo 'const abc = () => {};' > build/index.js
+      run: mkdir build && touch build/xpto.js && echo 'const abc = () => {};' > build/xpto.js
     - name: Hello2
       run: npm install
     - name: AWS Lambda Deploy
@@ -22,7 +22,7 @@ jobs:
         aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws_region: ${{ secrets.AWS_REGION }}
         function_name: gorush
-        source: build
+        source: build/
         publish: true
         # dry_run: true
         # zip_file: output.zip
